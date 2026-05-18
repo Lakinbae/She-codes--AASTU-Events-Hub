@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>She Codes Bootcamp | AASTU Events Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="glass-nav">
+        <a href="index.html" class="logo">SHE<span>CODES</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#events" class="dropbtn">Events <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="bootcamp.html">She Codes Bootcamp</a>
+                    <a href="hackathon.html">Annual Hackathon</a>
+                    <a href="conference.html">Women in Tech Conference</a>
+                    <a href="ai_workshop.html">AI & Data Science Workshop</a>
+                    <a href="innovation_fair.html">Student Innovation Fair</a>
+                </div>
+            </li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <a href="bootcamp.html#register" class="cta-nav mobile-hidden">Register Now</a>
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <div class="mobile-nav-overlay">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-dropbtn">Events <i class="fas fa-chevron-down"></i></a>
+                <div class="mobile-dropdown-content">
+                    <a href="bootcamp.html">She Codes Bootcamp</a>
+                    <a href="hackathon.html">Annual Hackathon</a>
+                    <a href="conference.html">Women in Tech Conference</a>
+                    <a href="ai_workshop.html">AI & Data Science Workshop</a>
+                    <a href="innovation_fair.html">Student Innovation Fair</a>
+                </div>
+            </li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="bootcamp.html#register" class="cta-nav">Register Now</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section - Background and content dynamically set by JS -->
+        <section id="hero-section" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="badge">Intensive Program</div>
+                <h1 class="gradient-text" id="bootcamp-title">She Codes Bootcamp 2024</h1>
+                <p id="bootcamp-tagline">An intensive 3-month program designed to transform aspiring women into job-ready frontend and backend developers.</p>
+                <div class="countdown">
+                    <div class="time-box"><span id="days">00</span><small>Days</small></div>
+                    <div class="time-box"><span id="hours">00</span><small>Hrs</small></div>
+                    <div class="time-box"><span id="mins">00</span><small>Mins</small></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About the Bootcamp -->
+        <section id="about-bootcamp" class="section container">
+            <h2 class="section-title">About the <span class="gradient-text">Bootcamp</span></h2>
+            <div class="about-grid">
+                <div>
+                    <p id="bootcamp-about-text"></p>
+                    <p>Our curriculum emphasizes hands-on projects, pair programming, and real-world problem-solving to ensure you gain practical experience. Join a supportive community and kickstart your tech career!</p>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?auto=format&fit=crop&w=800&q=80" alt="Bootcamp Learning" class="glass-card" style="padding: 0; border-radius: 15px; max-width: 100%;">
+                </div>
+            </div>
+        </section>
+
+        <!-- Bootcamp Schedule -->
+        <section id="schedule" class="section container">
+            <h2 class="section-title">Bootcamp <span class="gradient-text">Schedule</span></h2>
+            <table class="schedule-table glass-card">
+                <thead>
+                    <tr>
+                        <th>Period</th>
+                        <th>Topic</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody id="bootcamp-schedule">
+                    <!-- Schedule items will be dynamically loaded here -->
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Instructor Cards -->
+        <section id="instructors" class="section container">
+            <h2 class="section-title">Meet Our <span class="gradient-text">Instructors</span></h2>
+            <div class="grid" id="instructor-list">
+                <!-- Instructor cards will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Registration Form -->
+        <section id="register" class="form-section container registration-form-container">
+            <h2 class="section-title">Join the <span class="gradient-text">Bootcamp</span></h2>
+            <form id="bootcampRegistrationForm" class="glass-card" style="padding: 40px; margin-top: 0;">
+                <div class="input-group">
+                    <div>
+                        <label for="reg-fullname">Full Name</label>
+                        <input type="text" id="reg-fullname" placeholder="John Doe" required>
+                    </div>
+                    <div>
+                        <label for="reg-email">Email</label>
+                        <input type="email" id="reg-email" placeholder="john.doe@example.com" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div>
+                        <label for="reg-phone">Phone Number</label>
+                        <input type="text" id="reg-phone" placeholder="+251 9... or 09..." required>
+                    </div>
+                    <div>
+                        <label for="reg-track">Preferred Track</label>
+                        <select id="reg-track" required>
+                            <option value="">Select a track</option>
+                            <option value="frontend">Frontend Development</option>
+                            <option value="backend">Backend Development</option>
+                            <option value="fullstack">Fullstack Development</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label for="reg-experience">Previous Experience (Optional)</label>
+                    <textarea id="reg-experience" rows="4" placeholder="Briefly describe any prior coding experience or projects."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit Application</button>
+                <div id="bootcamp-status-msg" class="form-message"></div>
+            </form>
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="section container">
+            <h2 class="section-title">Bootcamp <span class="gradient-text">FAQs</span></h2>
+            <div class="faq-list" id="bootcamp-faq-list">
+                <!-- FAQs will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Contact Page snippet for bootcamp specific contact -->
+        <section id="contact" class="section container">
+            <h2 class="section-title">Get in <span class="gradient-text">Touch</span></h2>
+            <div class="contact-info">
+                <div class="contact-card glass-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Our Location</h3>
+                    <p>AASTU Main Campus,<br>Addis Ababa, Ethiopia</p>
+                </div>
+                <div class="contact-card glass-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Email Us</h3>
+                    <p>bootcamp@aastuevents.et</p>
+                </div>
+                <div class="contact-card glass-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <h3>Call Us</h3>
+                    <p>+251 11-123-4567</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>AASTU Events Hub</h3>
+                    <p>Empowering the next generation of women in technology through education, collaboration, and innovation.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sponsors.html">Our Sponsors</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 SheCodes AASTU. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="js/global.js"></script>
+    <script type="module" src="js/bootcamp.js"></script>
+</body>
+</html>
