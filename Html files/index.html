@@ -1,1 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AASTU Events Hub | Empowering Women in Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Global Navigation (copied into each HTML for hackathon simplicity) -->
+    <nav class="glass-nav">
+        <a href="index.html" class="logo">SHE<span>CODES</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#events" class="dropbtn">Events <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="bootcamp.html">She Codes Bootcamp</a>
+                    <a href="hackathon.html">Annual Hackathon</a>
+                    <a href="conference.html">Women in Tech Conference</a>
+                    <a href="ai_workshop.html">AI & Data Science Workshop</a>
+                    <a href="innovation_fair.html">Student Innovation Fair</a>
+                </div>
+            </li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <a href="bootcamp.html#register" class="cta-nav mobile-hidden">Register Now</a> <!-- Default to bootcamp registration -->
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <!-- Mobile Navigation Overlay -->
+    <div class="mobile-nav-overlay">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-dropbtn">Events <i class="fas fa-chevron-down"></i></a>
+                <div class="mobile-dropdown-content">
+                    <a href="bootcamp.html">She Codes Bootcamp</a>
+                    <a href="hackathon.html">Annual Hackathon</a>
+                    <a href="conference.html">Women in Tech Conference</a>
+                    <a href="ai_workshop.html">AI & Data Science Workshop</a>
+                    <a href="innovation_fair.html">Student Innovation Fair</a>
+                </div>
+            </li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="bootcamp.html#register" class="cta-nav">Register Now</a></li>
+        </ul>
+    </div>
 
+    <main>
+        <!-- Hero Section - Dynamically populated by JS -->
+        <section id="hero-section" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="badge">Next Event: <span id="event-type"></span></div>
+                <h1 id="main-title"></h1>
+                <p id="event-desc"></p>
+                <div class="countdown">
+                    <div class="time-box"><span id="days">00</span><small>Days</small></div>
+                    <div class="time-box"><span id="hours">00</span><small>Hrs</small></div>
+                    <div class="time-box"><span id="mins">00</span><small>Mins</small></div>
+                </div>
+                <div class="hero-actions" style="margin-top: 40px; display: flex; justify-content: center; gap: 20px;">
+                    <a id="hero-learn-more-btn" href="#" class="btn btn-primary">Learn More <i class="fas fa-arrow-right" style="margin-left: 8px;"></i></a>
+                    <a id="hero-register-btn" href="#" class="btn btn-secondary">Register Now</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Events Listing Section - Dynamically populated by JS -->
+        <section id="events" class="section container">
+            <h2 class="section-title">Explore Our <span class="gradient-text">Events</span></h2>
+            <div class="grid" id="events-grid">
+                <p>Loading events...</p> <!-- Placeholder while loading -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Global Footer (copied into each HTML for hackathon simplicity) -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>AASTU Events Hub</h3>
+                    <p>Empowering the next generation of women in technology through education, collaboration, and innovation.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sponsors.html">Our Sponsors</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2024 SheCodes AASTU. All rights reserved.
+            </div>
+        </div>
+    </footer>
+    <script type="module" src="js/global.js"></script>
+    <script type="module" src="js/index.js"></script>
+</body>
+</html>
