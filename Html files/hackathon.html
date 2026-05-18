@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annual Hackathon | AASTU Events Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="glass-nav">
+        <a href="index.html" class="logo">SHE<span>CODES</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+                <a href="#events" class="dropbtn">Events <i class="fas fa-chevron-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="bootcamp.html">She Codes Bootcamp</a>
+                    <a href="hackathon.html">Annual Hackathon</a>
+                    <a href="conference.html">Women in Tech Conference</a>
+                    <a href="ai_workshop.html">AI & Data Science Workshop</a>
+                    <a href="innovation_fair.html">Student Innovation Fair</a>
+                </div>
+            </li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+        </ul>
+        <a href="hackathon.html#register" class="cta-nav mobile-hidden">Register Now</a>
+        <div class="hamburger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </nav>
+    <div class="mobile-nav-overlay">
+        <ul class="mobile-nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="mobile-dropdown">
+                <a href="#" class="mobile-dropbtn">Events <i class="fas fa-chevron-down"></i></a>
+                <div class="mobile-dropdown-content">
+                    <a href="bootcamp.html">She Codes Bootcamp</a>
+                    <a href="hackathon.html">Annual Hackathon</a>
+                    <a href="conference.html">Women in Tech Conference</a>
+                    <a href="ai_workshop.html">AI & Data Science Workshop</a>
+                    <a href="innovation_fair.html">Student Innovation Fair</a>
+                </div>
+            </li>
+            <li><a href="sponsors.html">Sponsors</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="schedule.html">Schedule</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="hackathon.html#register" class="cta-nav">Register Now</a></li>
+        </ul>
+    </div>
+
+    <main>
+        <!-- Hero Section - Background and content dynamically set by JS -->
+        <section id="hero-section" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <div class="badge">48-Hour Challenge</div>
+                <h1 class="gradient-text" id="hackathon-title">Annual Innovation Hackathon</h1>
+                <p id="hackathon-tagline">Code for a Cause: Solving Community Challenges in a 48-hour intense coding marathon.</p>
+                <div class="countdown">
+                    <div class="time-box"><span id="days">00</span><small>Days</small></div>
+                    <div class="time-box"><span id="hours">00</span><small>Hrs</small></div>
+                    <div class="time-box"><span id="mins">00</span><small>Mins</small></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Event Introduction -->
+        <section id="introduction" class="section container">
+            <h2 class="section-title">Hackathon <span class="gradient-text">Introduction</span></h2>
+            <div class="about-grid">
+                <div>
+                    <p id="hackathon-intro-text"></p>
+                    <p>Form your teams, brainstorm groundbreaking ideas, and develop innovative solutions. This is your chance to showcase your coding prowess, collaborate with peers, and make a tangible impact on community challenges.</p>
+                    <a href="#register" class="btn btn-primary" style="margin-top: 20px;">Register Your Team</a>
+                </div>
+                <div>
+                    <img src="https://images.unsplash.com/photo-1620025916962-e9e46a78f307?auto=format&fit=crop&w=800&q=80" alt="Hackathon teamwork" class="glass-card" style="padding: 0; border-radius: 15px; max-width: 100%;">
+                </div>
+            </div>
+        </section>
+        <!-- Prize Section -->
+        <section id="prizes" class="section container">
+            <h2 class="section-title">Amazing <span class="gradient-text">Prizes</span></h2>
+            <div class="grid" id="prize-list">
+                <!-- Prizes will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Sponsors Section -->
+        <section id="sponsors" class="section container">
+            <h2 class="section-title">Our <span class="gradient-text">Sponsors</span></h2>
+            <div class="grid" id="sponsor-list">
+                <!-- Sponsors will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Event Timeline -->
+        <section id="timeline-section" class="section container">
+            <h2 class="section-title">Event <span class="gradient-text">Timeline</span></h2>
+            <div class="timeline" id="event-timeline">
+                <!-- Timeline items will be dynamically loaded here -->
+            </div>
+        </section>
+
+        <!-- Team Registration Form -->
+        <section id="register" class="form-section container registration-form-container">
+            <h2 class="section-title">Team <span class="gradient-text">Registration</span></h2>
+            <form id="hackathonRegistrationForm" class="glass-card" style="padding: 40px; margin-top: 0;">
+                <div class="input-group">
+                    <div>
+<label for="team-name">Team Name</label>
+                        <input type="text" id="team-name" placeholder="The Innovators" required>
+                    </div>
+                    <div>
+                        <label for="team-lead">Team Lead Name</label>
+                        <input type="text" id="team-lead" placeholder="Jane Doe" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <div>
+                        <label for="team-lead-email">Team Lead Email</label>
+                        <input type="email" id="team-lead-email" placeholder="jane.doe@example.com" required>
+                    </div>
+                    <div>
+                        <label for="team-size">Number of Members (max 4)</label>
+                        <input type="number" id="team-size" min="1" max="4" value="1" required>
+                    </div>
+                </div>
+                <div>
+                    <label for="project-idea">Project Idea (Optional)</label>
+                    <textarea id="project-idea" rows="4" placeholder="Briefly describe your team's innovative project idea."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Register Team</button>
+                <div id="hackathon-status-msg" class="form-message"></div>
+            </form>
+        </section>
+
+        <!-- Project Submission Info -->
+        <section id="submission-info" class="section container">
+            <h2 class="section-title">Project <span class="gradient-text">Submission</span></h2>
+            <div class="glass-card" style="padding: 30px; text-align: left; max-width: 800px; margin: 0 auto;">
+                <p>After registration, your team will receive detailed instructions on how to submit your project via our online platform. Please ensure all code, documentation, and a short demo video are uploaded by the deadline.</p>
+                <p>For any questions regarding submission, please refer to the hackathon guidelines or contact our support team.</p>
+                <a href="#" class="btn btn-secondary" style="margin-top: 20px;"><i class="fas fa-download"></i> Download Guidelines</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section about">
+                    <h3>AASTU Events Hub</h3>
+                    <p>Empowering the next generation of women in technology through education, collaboration, and innovation.</p>
+                </div>
+                <div class="footer-section links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="sponsors.html">Our Sponsors</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="
