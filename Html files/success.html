@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Successful!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="display:flex; align-items:center; justify-content:center; height:100vh;">
+    <div class="glass-card" style="text-align:center; padding: 50px;">
+        <i class="fas fa-check-circle" style="font-size: 4rem; color: #00ff88;"></i>
+        <h1 class="gradient-text">You're In!</h1>
+        <p id="success-msg">Loading your details...</p>
+        <a href="index.html" class="btn btn-secondary">Back to Home</a>
+    </div>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get('name');
+        const event = params.get('event');
+        document.getElementById('success-msg').innerText = `Congratulations ${name}! You are registered for the ${event}.`;
+    </script>
+</body>
+</html>
